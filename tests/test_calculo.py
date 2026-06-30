@@ -8,3 +8,6 @@ def test_sem_desconto():
 
 def test_desconto_50_porcento():
     assert calcular_preco_final(300, 50) == 150
+
+def calcular_preco_final(valor, desconto):
+    return valor - (valor * desconto)
