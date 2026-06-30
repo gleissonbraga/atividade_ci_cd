@@ -116,4 +116,11 @@ jobs:
 | Severidade | Alta |
 | Link da Issue | https://github.com/gleissonbraga/atividade_ci_cd/issues/3 |
 
-O defeito foi simulado alterando a função para retornar um valor incorreto. O problema foi identificado pela falha do teste automatizado durante a execução do pipeline. Após corrigir a implementação, os testes voltaram a ser aprovados.
+Simulei o defeito exeutando um novo teste sem a / 100 que seria para calcular a porcentagem
+
+```
+from calcular import calcular_preco_final
+
+def calcular_preco_final(valor, desconto):
+    return valor - (valor * desconto)
+```
